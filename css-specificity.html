@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Specificity</title>
+    <style>
+        .red {
+            color: #ff0000;
+        }
+
+
+        .green {
+            color: green !important;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+
+
+
+        /* .divv{
+            color: red;
+            border: 2px solid;
+            background-color: aqua;
+        } */
+
+        #Hello {
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- order matter if and only if  targeted by all the classes present in single element  -->
+
+
+    <!-- for example= 1.the class which is written at the last of css file will be applied to the element 
+                  (tag can also be persent in this order) 
+
+                  2.Specificity order is first ID second is class and attributes and the tags after that the universals  ( !important (tag used in the class before the colon ) >inline style  >ID>class and attributes >Tags >universals)
+                data value -will be discribed in the class and attribute it is same as the class and attributes   -->
+                 
+                <!-- 3. value of the specificity 
+                h1(1)
+                .blue (1)
+                href (10)
+                #id (100)
+                inline (1000) -->
+                
+
+
+
+
+
+    <div class="divv">
+        <h1 id="Hello" class="red green yellow ">
+            Hello my name is vishal thakur
+        </h1>
+    </div>
+
+</body>
+
+</html>
