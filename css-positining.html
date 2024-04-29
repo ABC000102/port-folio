@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 3px solid red;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .Box {
+
+            height: 1000px;
+        }
+
+        .box1 {
+            height: 150px;
+            width: 400px;
+            position: sticky;
+            top: 50px;
+            left: 50px;
+            background-color: aqua;
+            z-index: -1;
+        }
+
+        .box2 {
+            position: fixed;
+            height: 150px;
+            width: 400px;
+            left: 100px;
+            top: 150px;
+            /* position: fixed ; */
+            background-color: rgb(127, 165, 14);
+        }
+
+        .box3 {
+            position: fixed;
+            left: 150px;
+            top: 250px;
+            height: 150px;
+            width: 400px;
+            background-color: rgb(213, 36, 51);
+            /* cursor: url(); */
+          
+        }
+        a{
+            cursor: wait;
+            border: 5px solid green;
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        .flow{
+            border: 5px solid grey ;
+            height: 40vh;
+            width: 50vw;
+            overflow: scroll;
+        }
+        .vishu{
+            height: 10px;
+            width: 30px;
+            background-color: bisque;
+            /* border: 2px solid black; */
+             border-radius: 8px ;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- absolute tag didnot contains the space which he left from parent postion 
+but the relative position acquires the space which he left that time by changing from the parent position
+fixed position did not change its position as it will scrolled downm or left or in any way the fixed elements will not  move any way as the property will not be changed   -->
+    <div class="Box">
+        <a href="Html-form.html"  > go to next page</a>
+        <div class="box1">Hello</div>
+        <div class="box2">I am fixed position</div>
+        <div class="box3">Good morning</div>
+    </div>
+    <div class="flow">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vero sequi a nihil magnam delectus. Nobis eveniet veritatis et, porro, molestias vitae recusandae tempora exercitationem dicta molestiae cum obcaecati voluptatibus. Veritatis quidem, soluta eaque consequuntur, cupiditate aliquam perferendis alias amet unde maxime tempora qui rem nihil iure consequatur omnis ex saepe fugit voluptatem quas est sed a porro. In voluptas saepe pariatur? Aliquam animi minus deleniti rem saepe magni maiores. Vero illum impedit, similique eaque rem consectetur, adipisci dolores a quibusdam nihil tenetur. Sapiente dolore veritatis, excepturi illo possimus molestiae minima dolorum doloribus eum est facilis delectus consequatur asperiores architecto repellendus rem, numquam sit placeat consequuntur voluptatem quos cupiditate accusamus recusandae. Vitae odio itaque aliquid alias debitis laudantium, quo architecto quidem labore autem delectus aut quia rerum reiciendis quis, et est! Asperiores odit earum veritatis, voluptatem pariatur doloremque corporis soluta sunt dolorum magnam, accusantium quibusdam? Animi deserunt sapiente ipsa ut? Aspernatur ratione distinctio eum eius praesentium aperiam tempora animi eligendi totam illum quaerat, magnam aliquid repudiandae cum accusamus aut minus pariatur modi, dolore quidem veritatis ullam sunt? Illum, sunt eius consequuntur inventore odit quasi veniam eligendi excepturi exercitationem non explicabo quod nemo aliquam recusandae ad ipsa corrupti velit! Cum, maxime?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, harum delectus voluptas facilis nulla magni tenetur quidem soluta necessitatibus laborum sit ducimus est molestiae eligendi veniam sequi eum dicta. Quibusdam sequi quaerat commodi unde voluptas dolorem? Facere magni deleniti voluptatibus, repudiandae voluptas vero ipsa consequatur vel, inventore, reiciendis illum ipsum aliquid consectetur iusto! Dicta odio sequi, cumque similique quo obcaecati. Laudantium ducimus voluptatum, obcaecati, adipisci sit iusto perspiciatis illo odit sequi soluta optio voluptatem quidem nihil iste dolor aspernatur quo qui iure minima deserunt tenetur quas architecto? Quia fuga distinctio voluptatum sapiente, rerum tenetur et! Eveniet illum similique maiores quia, quae nam veniam repudiandae. Laborum nisi culpa optio quos possimus? Quasi dolor corporis, officiis inventore ex minus, minima adipisci deserunt, provident iste perferendis totam quae autem! Dolores accusamus perferendis deserunt tempore. Eos, distinctio? Minima dolorum dignissimos enim non, excepturi maxime nemo! Eius aliquid repellat, excepturi sint maiores obcaecati dignissimos accusamus nisi quos commodi provident, sequi architecto id. Sequi officia unde inventore ducimus enim nemo incidunt at, itaque cumque maiores modi nesciunt hic, rerum earum aspernatur magnam illum facilis. Dignissimos necessitatibus neque totam rerum corporis quas, numquam, consequatur iusto a dicta eos. Quasi nostrum eum minus sunt architecto nulla natus? Accusantium ad culpa voluptatum quae eum aliquam eligendi laudantium numquam. Illum ullam distinctio eveniet accusamus ratione! Obcaecati, fugit recusandae. Recusandae, laborum atque non fugiat esse doloremque suscipit consequuntur aperiam, natus magnam labore ratione omnis vero quod vel sunt qui quas amet facere distinctio odit in. Accusamus ea, dolor sapiente soluta voluptatem asperiores rem, quaerat at fuga officia dicta consequuntur sit quas voluptatibus impedit, tempora itaque unde iusto autem neque doloremque laudantium. Natus, sint suscipit, sapiente consequuntur officia rerum corrupti tenetur veniam deleniti omnis, similique maxime. Cum possimus inventore alias aut rerum explicabo consequatur, doloremque expedita voluptatum praesentium ex consequuntur id unde ullam facere distinctio provident placeat quam nihil vel excepturi? Eveniet dicta, quibusdam dolores sed mollitia aperiam quia sapiente exercitationem in quod excepturi aut, nostrum recusandae ipsa officiis quaerat blanditiis cum illo quas perferendis repudiandae necessitatibus et placeat? Minus, nihil minima! Voluptatem accusamus magnam unde aperiam, quo hic magni. Quam dolor nisi enim similique aliquid, natus tempora animi sequi quae ullam perspiciatis placeat voluptate, vero necessitatibus velit delectus nam. Reprehenderit delectus, cupiditate asperiores culpa hic accusamus quasi cumque neque molestiae. Quasi, velit. Eius veritatis totam est aperiam! Nemo veritatis voluptatibus quibusdam consequuntur vero quas omnis molestias suscipit doloribus enim! Quis asperiores aperiam soluta nesciunt recusandae, accusamus libero non explicabo minus vero excepturi fuga assumenda sequi natus corrupti blanditiis tenetur tempora? Quibusdam voluptas placeat sunt modi non, aspernatur ea et quos vel facilis aliquam illo doloremque consequatur eum recusandae tempore, dolore, eos repellendus. A mollitia nesciunt perferendis, est, veniam qui nam autem animi debitis fugiat iusto sed modi accusantium, doloribus tenetur libero. Officiis dolore necessitatibus eum laboriosam animi deserunt quos minima vitae id voluptatibus iste dolorem placeat dolor, nisi quis similique rem enim fugiat odit omnis. Optio voluptatem velit explicabo maxime, beatae, assumenda provident doloremque quam ipsum facere modi saepe, corrupti recusandae?</p>
+    </div>
+    <div class="vishu">
+        hello 
+    </div>
+
+     
+</body>
+
+</html>
