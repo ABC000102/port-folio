@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS-ALIGN </title>
+    <style>
+        .container{
+            height: 70vh;
+            width: 500px;
+            border: 2px solid red;
+            display: grid;
+            /* grid-template-columns:[A] 100px 100px 100px 100px 100px; */
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+/* grid-template-rows: 10fr 10fr 10fr 5fr; */
+/* /* justify-content: center; */
+align-items: center;
+        }
+        .item{
+            border: 2px solid grey ;
+            height: 20px;
+            /* width: 40px; */
+
+        }
+        .item3{
+/* grid-column-start: 1;
+grid-column-end:4; */
+        grid-row:2/3;
+
+        }
+        .item5{
+grid-row: 3/5;
+grid-column: 3/5;
+        }
+        
+    </style>
+</head>
+<body> 
+    whats is grid?
+
+    <div class="container">
+        <div class="item items1">1</div>
+        <div class="item items2">2</div>
+        <div class="item items3 ">3</div>
+        <div class="item items4">4</div>
+        <div class="item items5">5</div>
+    </div>
+
+</body>
+</html>
+grid cell ,grid area,grid track
