@@ -1,14 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-GRID</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .conatiner {
+            border: 8px solid black;
+            display: grid;
+            /* width: 100%; */
+            height: 100vh;
+            /* width: 100vw; */
+            grid-template-areas: "nav nav nav"
+                " side main float"
+                "footer footer footer";
+            grid-template-rows: 10vh 70vh 20vh;
+            grid-template-columns: 10vw 50vw 38vw;
+
+
+
+        }
+
+        .item {
+            /* height: 30px; */
+            /* width: 40px; */
+            border: 3px solid green;
+
+
+        }
+
+        .item1 {
+            grid-area: nav;
+            /* width: 100%; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aquamarine;
+            font-size: 1.2rem;
+
+
+
+
+        }
+
+        .item2 {
+            grid-area: side;
+            background-color: rgb(151, 117, 244);
+        }
+
+        .item3 {
+            grid-area: main;
+            background-color: grey;
+
+        }
+
+
+
+        .item4 {
+            grid-area: float;
+            background-color: greenyellow;
+
+        }
+
+
+
+        .item5 {
+            grid-area: footer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: wheat;
+
+        }
+         
+         
+        .nav1>li :hover{
+            cursor: pointer;
+            color: aqua;
+            font-size: 1.2rem;
+        }
+        .nav1{
+           /* margin: 50px; */
+           /* padding: 50px; */
+        }
+        .nav1>li{
+            padding: 50px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+
+        li {
+
+            /* border: 2px solid grey; */
+            height: 20px;
+            list-style: none;
+            /* border-radius: 8px;
+            background-color: aqua; */
+            margin: 5px;
+        }
+
+        li:hover {
+            cursor: pointer;
+            font-size: 1.3rem;
+            color: rgb(11, 29, 23);
+
+        }
+
+        h1 {
+            margin: 450px;
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        iframe {
+            height: 510px;
+            width: 100%;
+            border: 3px solid green;
+             
+        }
+        frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.img1{
+   margin-left: 40px;
+}
+h3{
+    align-items: center;
+    margin-top: 120px;
+    margin-left: 350px;
+    font-size: 0.9em;
+}
+
         
     </style>
 </head>
+
 <body>
+    <div class="conatiner">
+        <div class="item item1">
+            <h1>Info Tree </h1>
+            <nav>
+
+
+                <a href="">
+                    <li>Home</li>
+                </a>
+
+
+                <a href="">
+                    <li>Contact</li>
+                </a>
+
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Category</li>
+                </a>
+
+
+
+
+
+            </nav>
+        </div>
+        <div class="item item2">
+            <div class="SideBar">
+                <ul>
+                    <li><a href="html-101.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="html-102.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+
+                    
+                    <li><a href="images/html.jpeg"  target="myFrame2"    >CSS intro</a></li>
+
+                    
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="item item3"> 
+            <div class="frame">
+                <iframe frameborder="100px" name="myFrame"></iframe>
+            </div>
+        </div>
+
+
+        <div class="item item4">
+            
+            <div class="frame">
+            <iframe frameborder="100px" name="myFrame2"></iframe>
+        </div>
+    </div>
+
     
+        <div class="item item5">
+             <div class="img1"> <h2 style="font-size: 2rem;">INFO-TREEISM</h2><img src="images/csslogon.png" height="90px" width="90px" alt=""></div>
+             
+             <h3>@copyright1411</h3>
+             <footer> 
+                <nav class="nav1">
+                    <li>business</li>
+                    <li>contact</li>
+                    <li>About </li>
+                    <li>email </li>
+                </nav>
+                 
+            </footer>
+             
+        
+    </div>
 </body>
+
 </html>
