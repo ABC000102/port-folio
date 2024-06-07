@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-GRID</title>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sedan+SC&display=swap"
+        rel="stylesheet">
+
     <style>
+        /* css variable */
+        :root{
+            --color :rgb(203, 38, 41);
+        }
+
+
+
+
+
         * {
             margin: 0;
             padding: 0;
@@ -40,24 +55,43 @@
             grid-area: nav;
             /* width: 100%; */
             display: flex;
-            justify-content: space-around;
+            justify-content:flex-end;
             align-items: center;
-            background-color: aquamarine;
-            font-size: 1.2rem;
-
-
-
-
+            background-color: var(--color);
         }
+         .img2 h1{
+            font-size: 2rem;
+         }
+
+
 
         .item2 {
             grid-area: side;
             background-color: rgb(151, 117, 244);
+
+            /* padding: 30px; */
+            display: flex;
+            /* row-gap: 50px;
+column-gap: 50px; */
+            /* justify-content: center;
+        align-items: center; */
+        overflow: scroll;
+
+
+
+
         }
+
+        .item2 ul li {
+             
+            margin: 25px;
+        }
+
+
 
         .item3 {
             grid-area: main;
-            background-color: grey;
+            background-color:white;
 
         }
 
@@ -65,7 +99,7 @@
 
         .item4 {
             grid-area: float;
-            background-color: greenyellow;
+            background-color: white
 
         }
 
@@ -76,21 +110,23 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: wheat;
+            background-color: rgb(129, 88, 10);
 
         }
-         
-         
-        .nav1>li :hover{
+
+
+        .nav1>li :hover {
             cursor: pointer;
             color: aqua;
             font-size: 1.2rem;
         }
-        .nav1{
-           /* margin: 50px; */
-           /* padding: 50px; */
+
+        .nav1 {
+            /* margin: 50px; */
+            /* padding: 50px; */
         }
-        .nav1>li{
+
+        .nav1>li {
             padding: 50px;
         }
 
@@ -134,31 +170,47 @@
             height: 510px;
             width: 100%;
             border: 3px solid green;
-             
+
         }
+
         frame {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-.img1{
-   margin-left: 40px;
-}
-h3{
-    align-items: center;
-    margin-top: 120px;
-    margin-left: 350px;
-    font-size: 0.9em;
-}
 
-        
+        .img1 {
+            margin-left: 40px;
+        }
+
+        h3 {
+            align-items: center;
+            margin-top: 120px;
+            margin-left: 350px;
+            font-size: 0.9em;
+        }
+
+        body {
+            font-family: "Permanent Marker", cursive;
+        }
+        .img2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="conatiner">
         <div class="item item1">
+             
+            
+            <div class="img2"> 
+            <img src="images/csslogon.png" alt="" height="60px" width="90px">
             <h1>Info Tree </h1>
+        </div>
+
             <nav>
 
 
@@ -177,37 +229,30 @@ h3{
                 <a href="">
                     <li>Category</li>
                 </a>
-
-
-
-
-
             </nav>
         </div>
         <div class="item item2">
-            <div class="SideBar">
+             
                 <ul>
-                    <li><a href="html-101.html" target="myFrame">CSS intro</a></li>
-                    <li><a href="html-102.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="html-101.html" target="myFrame"> CSS intro</a></li>
+                    <li><a href="html-102.html" target="myFrame"> CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-                    <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
+                    <li><a href="iframeimg.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
 
-                    
-                    <li><a href="images/html.jpeg"  target="myFrame2"    >CSS intro</a></li>
-
+                    <li><a href="iframeimg.html" target="myFrame2" >CSS intro</a></li>
                     
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                     <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
                 </ul>
-                
-            </div>
+             
+
         </div>
-        <div class="item item3"> 
+        <div class="item item3">
             <div class="frame">
                 <iframe frameborder="100px" name="myFrame"></iframe>
             </div>
@@ -215,29 +260,32 @@ h3{
 
 
         <div class="item item4">
-            
-            <div class="frame">
-            <iframe frameborder="100px" name="myFrame2"></iframe>
-        </div>
-    </div>
 
-    
+            <div class="frame">
+                <iframe frameborder="100px" name="myFrame2"></iframe>
+            </div>
+        </div>
+
+
         <div class="item item5">
-             <div class="img1"> <h2 style="font-size: 2rem;">INFO-TREEISM</h2><img src="images/csslogon.png" height="90px" width="90px" alt=""></div>
-             
-             <h3>@copyright1411</h3>
-             <footer> 
+            <div class="img1">
+                <h2 style="font-size: 2rem;">INFO-TREEISM</h2><img src="images/tree.png.crdownload.png" height="90px"
+                    width="90px" alt="">
+            </div>
+
+            <h3>@copyright1411</h3>
+            <footer>
                 <nav class="nav1">
                     <li>business</li>
                     <li>contact</li>
                     <li>About </li>
                     <li>email </li>
                 </nav>
-                 
+
             </footer>
-             
-        
-    </div>
+
+
+        </div>
 </body>
 
 </html>
